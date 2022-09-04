@@ -38,7 +38,7 @@ export default class CartShoe extends Component {
             <div>
                 {/* Button trigger modal */}
                 <div className="text-right mb-2">
-                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
                         Carts <i className="fa-solid fa-cart-shopping mr-2"></i>
                         <span className='ml-3'>
                             ({carts.length}-{' '} {carts.reduce((total, items) => { return (total += items.amount * items.price) }, 0)}$)
@@ -46,7 +46,7 @@ export default class CartShoe extends Component {
                     </button>
                 </div>
                 {/* Modal */}
-                <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade" id="exampleModal1" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-lg" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
